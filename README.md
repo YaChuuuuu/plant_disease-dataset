@@ -7,7 +7,7 @@
 2. 訓練資料和驗證資料：training / validation = 80 / 20
 3. 測試資料：資料集test資料夾中照片 + 自行拍攝病害照片 (應只有一張符合原訓練資料集的分類)
 4. 目的：預測圖片是否生病
-5. 方法：使用預訓練模型修改參數進行訓練
+5. 方法：使用預訓練模型(Resnet18)進行訓練
 ---
 ### 結果
 1. 資料集中的test資料夾預測成果佳
@@ -16,7 +16,7 @@
    ![image](https://github.com/user-attachments/assets/05da3caf-923c-4a08-bdeb-52dbbe33fbe2)
 4. 自行拍攝照片中的16張被認為準確預測 (可能性90%以上) ，但標籤和預測結果不合，多半為：
    
-   a. 相同的植物種類，但為不同的病害->病害相似
+   a. 相同的植物種類，但為不同的病害->照片的病害類似且不存在原本的分類中
    
       ![image](https://github.com/user-attachments/assets/275c917e-5398-4d4d-8e7a-5bc478c6e1d4)
       ![image](https://github.com/user-attachments/assets/86aed123-435b-4417-b917-bf6626eb5988)
